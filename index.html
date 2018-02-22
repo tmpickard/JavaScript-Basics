@@ -5,15 +5,39 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<div id="wrapper"><!-- Background color -->
+		<div id="container"><!-- Background color -->
             <div id="header"><h1>JavaScript Basics</h1></div><!-- Red header box -->
-            <div id="navigation"></div> <!-- Navigation side bar -->
+            <div id="navigation"> <!-- Back panel for menu -->
+            	<div id="menu"><p>Home</p> <!-- Menu items -->
+            		<ul style="list-style-type:disc">
+            			<li>JavaScript</li>
+            			<ul style="list-style-type: circle;" class="indentation">
+	            			<li>Variable Declaration</li>
+	            			<li>Variable Assignment</li>
+	            			<li>Data Type</li>
+	            			<li>Conditionals</li>
+	            			<li>Loops</li>
+	            			<li>Function</li>
+            			</ul>
+            			<li>Projects</li>
+            			<li>Assignments</li>
+            			<li>Quiz</li>
+            		</ul>
+            	</div>
+            </div> <!-- Navigation side bar -->
             <div id="main_content">
-            	<div id="leftyel" class="subcontents"></div>
-            	<div id="midyel" class="subcontents"></div>
-            	<div id="rightyel" class="subcontents"></div>
+            	<div id="title" class="subcontents"><h2>JavaScript Basics</h2></div>
+            	<div class="subcontents"><p>
+            		JavaScript is a cross-platform, object-oriented scripting language.  JavaScript is expremely popular for a variety of reasons.  It is a small and lightweight language allowing maximum flexibiity for developers to take it in a bunch of different directions.   JavaScript lives inside a host environment (a web browser or Node server), it can be connected to the objects of these environments to provide programmatic scontrol over them.
+            	</p></div>
+            	<div class="subcontents">
+            		<ul style="list-style-type: disc;" class="indentation">
+            			<li>Variable Declaration JavaScript variables are containers for storing data values - imagine a cup you fill with coffe, the cup holds the coffee, a variable holds a value.  All JavaScript variables must be identified with unique names.  These unique names are called idetifiers. var x;</li>
+            			<li>Variable Assignment Assignment operators assign values to JavaScript variables - our cup can now have coffee poured in it, giving our variable a value to hold.  The = assignment oerator assigns a value to a variable. var x = 10;</li>
+            			<li>Data Types Data types are an important concept; to be able to operate on variable you need to know the data type.  There are six data types that are JavaScript primitives:  Boolean - true or false; null - null aka nothing; Number - 42 or 3.14159; String - "Coding Dojo Rocks!"; Array - [1, 'Coding', 2, 'Dojo']; and Object - {first_name: 'Jane', last_name: 'Doe'}</li> <!-- Trust me... I actually typed the whole thing out when I did this originally. -->
+            	</div>
             </div>
-            <div id="advertisement"></div>
+            <div id="advertisement"><p>For more useful information check out this url: JavaScript!</p></div>
         </div><!-- end of wrapper -->
 	</body>
 </html>
